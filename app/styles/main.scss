@@ -55,6 +55,15 @@ body {
   stroke-width:2px;
 }
 
+#info {
+  position: absolute;
+  left: 300px;
+  top: 60px;
+  font-size: 12pt;
+  width: 70%;
+  line-height: 30px;
+}
+
 #country {
   position: absolute;
   left: 300px;

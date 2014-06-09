@@ -74,7 +74,7 @@ function drawLines() {
         generator = new arc.GreatCircle(start, end);
         var line = generator.Arc(100,{offset:10});
         
-        console.log('line', start, end);
+        //console.log('line', start, end);
 
         if ( i !== 0 ) {
           console.log('cnt')
@@ -106,6 +106,7 @@ function drawLines() {
         //transitionGlobe(data[0].features[i]);
 
         var len = data[0].features.length - 1;
+        i++;
         if ( i === len ) {
           clearInterval(renderInterval);
           $('.intro-lines').remove();
@@ -113,7 +114,6 @@ function drawLines() {
           i = 0;
           iterate();
         }
-        i++;
 
       }, 5000);
     }
@@ -125,6 +125,7 @@ function drawLines() {
 function drawPoint(point) {
   
   $('#country').html(point.properties.country);
+  $('#info').html("Type: " + point.properties.type);
 
   svg.selectAll("circles.points")
     .data([ point ])
