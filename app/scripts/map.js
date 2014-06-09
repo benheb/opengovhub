@@ -111,6 +111,8 @@ function drawLines() {
           clearInterval(renderInterval);
           $('.intro-lines').remove();
           $('.location').remove();
+          $('#country').html('OpenGovHub');
+          $('#info').html('The OpenGov Hub physically collocates historically distinct but like-minded communities of practice under a single shared physical workspace in downtown Washington, DC.  The OpenGov Hub is the day-to-day home to a range of people and organizations working on the open government agenda while also serving as a community gathering point for open government learning and networking activities in the Washington area.')
           i = 0;
           iterate();
         }
