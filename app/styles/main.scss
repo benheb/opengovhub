@@ -1,0 +1,87 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin:0px;
+  background: #fcfcfa;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+#map {
+  position:relative;
+  height:500px;
+  overflow: hidden;
+}
+
+.stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.fill {
+  fill: #fff;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.land {
+  fill: #222;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.location {
+  fill:#3ba3d0;
+  stroke:#FFF;
+  stroke-width:2px;
+}
+
+#country {
+  position: absolute;
+  left: 300px;
+  top: 10px;
+  font-size: 30pt;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.97);
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #EEE;
+  height:200px;
+}
+
+.footer #gov-brand img {
+  width:260px;
+}
+
+.navbar-default {
+  background-color: rgba(248, 248, 248, 0.97);
+  border-color: #e7e7e7;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #D6D6D6 !important;
+}
